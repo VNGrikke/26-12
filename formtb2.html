@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table{
+        text-align: center;
+    }
+    img{
+        border-radius: 10px;
+        padding-top: 5px;
+    }
+    .content {
+        max-width: 300px;
+        margin: auto;
+        padding: 10px;
+    }
+    input{
+        width: 150px;
+    }
+</style>
+<body class="content">
+    
+    <table border="1" style="border-collapse: collapse;">
+        <caption><i>My Store</i></caption>
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Name</th>
+                <th>price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="https://medlatec.vn/ImagePath/images/20221017/20221017_qua-cam-1.jpg" width="100px"></td>
+                <td>Oranges</td>
+                <td>$1 ea</td>
+            </tr>
+            <tr>
+                <td><img src="https://images.everydayhealth.com/images/diet-nutrition/all-about-bananas-nutrition-facts-health-benefits-recipes-and-more-rm-722x406.jpg?sfvrsn=452838ad_3" width="100px"></td>
+                <td>Bananas</td>
+                <td>$0.75/lb</td>
+            </tr><tr>
+                <td><img src="https://vinmec-prod.s3.amazonaws.com/images/20190614_114641_156500_sup-lo.max-800x800.jpg" width="100px"></td>
+                <td>Broccoli</td>
+                <td>$3 a     head</td>
+            </tr>
+        </tbody>
+    </table><br>
+    <form action="booking" method="post">
+        <caption style="font-size: large;"><b>Booking Form</b></caption>
+        <div>
+            <label for="name">Name:</label>
+            <input required type="text" name="name" id="name">
+        </div>
+        <div>
+            <label for="Email">Email:</label>
+            <input required type="email" name="Email" id="Email">
+        </div>
+        <div>
+            <label for="phoneNumber">Phone:</label>
+            <input required type="tel" name="phoneNumber" placeholder="0123-456-789" id="phoneNumber" pattern="0-[0-9]{3}-[0-9]{3}-[0-9]{3}">
+        </div>
+        <div>
+            <label for="date">Date:</label>
+            <input required type="date" name="date" id="date">
+        </div>
+        <div>
+            <label for="time">Time:</label>
+            <input required type="time" name="time" id="time">
+        </div>
+        <div>
+            <label for="NOGuest">Number of guests:</label>
+            <input required type="text" name="NOGuest" id="NOGuest">
+        </div>
+        <div>
+            <input style="size: 20px;" type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+</html>
